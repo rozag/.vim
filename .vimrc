@@ -8,16 +8,13 @@ set path+=**
 command! MakeTags !ctags -R .
 
 " Colorcheme
-syntax enable
-set background=dark
-" colorscheme solarized
-colorscheme badwolf
+colorscheme sublimemonokai
 
 " move through empty space
 " set virtualedit=all
 
 " highlight current line
-set cursorline
+" set cursorline
 
 " redraw only when we need to.
 set lazyredraw
@@ -42,6 +39,9 @@ noremap <Right> <NOP>
 " inoremap <Down> <NOP>
 " inoremap <Left> <NOP>
 " inoremap <Right> <NOP>
+
+" Map quick jj to Esc
+inoremap jj <Esc>
 
 " GVIM options
 " :set guioptions-=m  "remove menu bar
@@ -174,7 +174,7 @@ if has("gui_running")
 endif
 
 " Set GVIM font
-set guifont=Hack\ 11
+set guifont=Fira\ Code\ 12
 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
