@@ -1,14 +1,19 @@
 execute pathogen#infect()
 
+set termguicolors
+
+" Enable syntax highlighting
+syntax enable
+
+" Colorcheme
+colorscheme dracula
+
 " Search down the subfolders
 " :find *Activity.<TAB>
 set path+=**
 
 " Create the 'tags' file
 command! MakeTags !ctags -R .
-
-" Colorcheme
-colorscheme sublimemonokai
 
 " move through empty space
 " set virtualedit=all
@@ -57,9 +62,6 @@ set nocompatible
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
 filetype indent plugin on
-
-" Enable syntax highlighting
-syntax on
 
 " Vim with default settings does not allow easy switching between multiple files
 " in the same editor window. Users can use multiple split windows or multiple
@@ -174,7 +176,7 @@ if has("gui_running")
 endif
 
 " Set GVIM font
-set guifont=Fira\ Code\ 12
+set guifont=JetBrains\ Mono\ 13
 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
